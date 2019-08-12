@@ -1,6 +1,6 @@
 package prob6;
 
-public class Rectangle extends Shape  {
+public class Rectangle extends Shape implements Resizable {
 
 	public Rectangle(double w, double h) {
 		super.setHeight(h);
@@ -18,4 +18,9 @@ public class Rectangle extends Shape  {
 
 	}
 
+	@Override
+	public void resize(double d) {
+		this.setHeight(this.getHeight() * d);
+		this.setWidth(this.getWidth()*d);
+	}
 }
