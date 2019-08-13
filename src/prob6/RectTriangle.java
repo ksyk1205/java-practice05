@@ -9,12 +9,12 @@ public class RectTriangle extends Shape {
 
 	@Override
 	public double getArea() {
-		return super.getWidth()*super.getHeight();
+		return super.getWidth()*super.getHeight()*1/2;
 	}
 
 	@Override
 	public double getPerimeter() {
-		return (super.getWidth()+super.getHeight())*2;
+		return super.getWidth()+super.getHeight()+(Math.sqrt(super.getWidth()*super.getWidth()+super.getHeight()*super.getHeight()));
 	}
 
 }

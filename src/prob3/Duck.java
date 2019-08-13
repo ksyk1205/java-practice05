@@ -17,9 +17,8 @@ public class Duck extends Bird {
 	public String toString() {
 		return "오리의 이름은 "+super.getName()+"입니다.";
 	}
-
 	
-
+	Object o;
 		
 }
 

@@ -22,11 +22,7 @@ public class MyStack {
 	}
 
 	public boolean isEmpty() {
-		if(top==-1) {
-			return true;
-		}else {
-	    return false;
-		}
+		return top== -1;
 	}
 	
 	public String pop() throws MyStackException{
